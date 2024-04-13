@@ -3,7 +3,10 @@ from django.http import HttpResponse
 from .models import Addresses
 
 
+# Adding/Removing Addresses Allowance Password, Should be placed within a GET parameter called E_Key
+
 password = "pssw"
+
 
 def index(req):
     instances = Addresses.objects.all()
